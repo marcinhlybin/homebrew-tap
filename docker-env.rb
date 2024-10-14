@@ -11,7 +11,7 @@ class DockerEnv < Formula
   on_macos do
     on_intel do
       url "https://github.com/marcinhlybin/docker-env/releases/download/v1.0.0/docker-env_1.0.0_darwin_amd64.tar.gz"
-      sha256 "f28812a2feeef3feb75f7e4b204d1c1b0c921da87c90b53b103561c2ae4a570b"
+      sha256 "cdf8dd06ae5b1d4dd3568b91efb3dda949c4232ad5146bf403ca34d3f4ea4b0a"
 
       def install
         bin.install "docker-env"
@@ -19,7 +19,7 @@ class DockerEnv < Formula
     end
     on_arm do
       url "https://github.com/marcinhlybin/docker-env/releases/download/v1.0.0/docker-env_1.0.0_darwin_arm64.tar.gz"
-      sha256 "9d3faeacce3eed5515e3fcdca3b14a9b18c1c84135b5a7d1570c668961cc2463"
+      sha256 "ef9526fe73c6611b61262fa33a4c1785f19de8d71b7d1b736b78f396781f0526"
 
       def install
         bin.install "docker-env"
@@ -31,7 +31,7 @@ class DockerEnv < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/marcinhlybin/docker-env/releases/download/v1.0.0/docker-env_1.0.0_linux_amd64.tar.gz"
-        sha256 "74015ff741f44d6607e7e291727088a4b50aab84a48678ef4584802510dcd64b"
+        sha256 "5545d714f0495cbac1856f7d5524da75797d6c83780624b36960496c1702ab6d"
 
         def install
           bin.install "docker-env"
@@ -41,7 +41,7 @@ class DockerEnv < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/marcinhlybin/docker-env/releases/download/v1.0.0/docker-env_1.0.0_linux_arm64.tar.gz"
-        sha256 "e29ab6b42dc5f1483940c5c49cb256d1a1ace13c0a18d3a4d0e3c5b24dfbaf8e"
+        sha256 "89a352f8fc0555185dd6b18e4ecbebd81c4ef11b25b4bd4a1f824a49ddf6f17a"
 
         def install
           bin.install "docker-env"
