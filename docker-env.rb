@@ -5,21 +5,21 @@
 class DockerEnv < Formula
   desc "Per branch docker compose environment manager"
   homepage "https://github.com/marcinhlybin/docker-env"
-  version "2.1.0"
+  version "2.1.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/marcinhlybin/docker-env/releases/download/v2.1.0/docker-env_2.1.0_darwin_amd64.tar.gz"
-      sha256 "7d9c012e9ee7b5a8cbf74bebdee532d56ab2be595185d4487a8bdcfe6e7a82b7"
+      url "https://github.com/marcinhlybin/docker-env/releases/download/v2.1.1/docker-env_2.1.1_darwin_amd64.tar.gz"
+      sha256 "e9c6af1c274470e1cc982a2c0e52134988f974c74868e8e279bb1b74f5e4ae6c"
 
       def install
         bin.install "docker-env"
       end
     end
     on_arm do
-      url "https://github.com/marcinhlybin/docker-env/releases/download/v2.1.0/docker-env_2.1.0_darwin_arm64.tar.gz"
-      sha256 "7f44890773dfc2d977b6f2ff02a75db55e03a14e68aa482a3c00cd27483d2974"
+      url "https://github.com/marcinhlybin/docker-env/releases/download/v2.1.1/docker-env_2.1.1_darwin_arm64.tar.gz"
+      sha256 "86986ea78ace2dfaecb514a4ced57d0bc5c3de2968f58a1ec55f81a7dcd722b2"
 
       def install
         bin.install "docker-env"
@@ -30,8 +30,8 @@ class DockerEnv < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/marcinhlybin/docker-env/releases/download/v2.1.0/docker-env_2.1.0_linux_amd64.tar.gz"
-        sha256 "f75f34ea967863aa6cf42fd07ecc39b1e19ded9fd047088796791d3d9eebe616"
+        url "https://github.com/marcinhlybin/docker-env/releases/download/v2.1.1/docker-env_2.1.1_linux_amd64.tar.gz"
+        sha256 "40850c7e3d0059970ffc3f824a666ba2307255472ec63aef4566590bb049f9fa"
 
         def install
           bin.install "docker-env"
@@ -40,8 +40,8 @@ class DockerEnv < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/marcinhlybin/docker-env/releases/download/v2.1.0/docker-env_2.1.0_linux_arm64.tar.gz"
-        sha256 "966f1cfc6ff943c25d285798ad8c7418a124022a06d8b8177a86ea97a93c4522"
+        url "https://github.com/marcinhlybin/docker-env/releases/download/v2.1.1/docker-env_2.1.1_linux_arm64.tar.gz"
+        sha256 "2705bceaaf2724826bbb0373049eaeb6a577ffe6b6fb412c773c4b76e06c9cb2"
 
         def install
           bin.install "docker-env"
